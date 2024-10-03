@@ -10,6 +10,9 @@ if "`c(username)'" == "leixu" {
 	global outputs 	"C:/Users/leixu/OneDrive/桌面/Internship/DIME/info sessions/rrf24_training_elaine/Stata/Outputs"
 }
 
+version 18
+set seed 679203
+
 *-------------------------------------------------------------------------------	
 * Load data
 *------------------------------------------------------------------------------- 
@@ -21,7 +24,7 @@ use "${onedrive}/TZA_CCT_baseline.dta", clear
 *------------------------------------------------------------------------------- 
 
 * Drop duplicates
-sort hhid
+isid hhid key, sort
 by hhid: gen dup = cond(_N==1,0,_n)
 drop if dup==2
 

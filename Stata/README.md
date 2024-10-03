@@ -14,7 +14,7 @@ Welcome to the **Reproducible Research Fundamentals 2024** training repository. 
 
 This reproducibility package contains the work developed during the Reproducibility Research Training 2024.
 
-- **Stata Version**: Version 18.0
+- **Stata Version**: The default is Version 18, if your version is different, please set your own version
 
 - **0. Path changes**: 
 1. Please change the paths in your "main.do" do file with your own path in line 12-17 accordingly.
