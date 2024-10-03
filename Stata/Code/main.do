@@ -1,9 +1,9 @@
 /*******************************************************************************
 						 Main do-file							   
 *******************************************************************************/
-
+ clear all
 	* Set version
-	*version 18.0
+	version 18
 
 	* Set project global(s)	
 	// User: you 
@@ -21,7 +21,7 @@
 	global code 	"${github}/Stata/Code"
 	global outputs 	"${github}/Stata/Outputs"
 	
-	sysdir set PLUS "${code}/ado"
+	sysdir set PLUS "${code}/ado" //people have all packages here
 
 
 	/* Install packages 
